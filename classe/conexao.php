@@ -1,0 +1,14 @@
+<?php
+
+
+$host = "portalcmgb.mysql.dbaas.com.br";
+$usuario = "portalcmgb";
+$senha = "admcmgb10!@#";
+$bd = "portalcmgb";
+
+$mysqli = new mysqli($host, $usuario, $senha, $bd);
+
+if( $mysqli -> connect_errno)
+    echo "Falha na conexão: (".$mysqli -> connect_errno.") ".$mysqli -> connect_errno;
+
+?>
